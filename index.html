@@ -10,24 +10,42 @@
     <h1>Борисов Максим Денисович В8441</h1>
     <p> 
        Торт на день рождения 
-    </p> 
+   </p> 
      <x3d width='900px' height='600px'> 
         <scene> 
+  <transform rotation="1 2 0.4 0.5" translation="1 -0.5 0">
             <shape> 
         <appearance> 
-        <material diffuseColor='1 0 0'></material> 
+        <material diffuseColor='0.2 0.1 0'></material> 
+<TextureTransform scale="0.5 1"></TextureTransform>
+ <ImageTexture url ='https://i.imgur.com/86tfjiv.jpg' repeatS="True'
+repeatT="True"></ImageTexture>
         </appearance> 
-          <Box size='4 4 1'></Box> 
+          <Box size='4 1 4'></Box> 
     </shape> 
-    <transform translation='-3 0 0'> 
+
+<!--Свеча -->
+<transform translation='0 1 0'>
+<shape> 
+        <appearance> 
+        <material diffuseColor='0 0 0.4'></material> 
+        </appearance> 
+       <Cylinder  height="2" radius='0.1'></Cylinder>  
+    </shape> 
+    </transform> 
+
+<!--Пламя свечи -->
+    <transform translation='0 2.4 0'> 
     <shape> 
         <appearance> 
-        <material diffuseColor='0 1 0'></material> 
+        <material diffuseColor='1 0 0'></material> 
         </appearance> 
         <cone bottom="True" bottomRadius='0.1' height='0.8'></cone>
     </shape> 
     </transform> 
-    <transform translation='3 0 0'> 
+
+<!--Украшение торта -->
+    <transform translation='-1.5 0.7 1'> 
     <shape> 
         <appearance> 
         <material diffuseColor='0 0.8 0'></material> 
@@ -35,38 +53,30 @@
         <sphere radius = '0.25'></sphere> 
     </shape> 
 </transform> 
-    <transform translation='2 1 0'> 
-    <shape> 
+    <transform translation='-1.5 0.7 1.5'> 
+       <shape> 
         <appearance> 
-        <material diffuseColor='0.8 0.3 0.3'></material> 
+           <material diffuseColor='0.8 0.3 0.3'></material> 
         </appearance> 
-        <sphere radius = '0.25'></sphere> 
+       <sphere radius = '0.25'></sphere> 
   </shape> 
-    </transform>
-<transform translation='3 1 1'>
-    <shape> 
+</transform>
+     <transform translation='-1.1 0.7 1.25'>
+      <shape> 
         <appearance> 
-        <material diffuseColor='0.5 0.5 0.5'></material> 
+           <material diffuseColor='0 0.5 0.3'></material> 
         </appearance> 
-        <sphere radius = '0.25'></sphere> 
+       <sphere radius = '0.25'></sphere> 
  </shape>  
 </transform> 
-    <transform translation='2 2 2.5'> 
- <shape> 
-        <appearance> 
-        <material diffuseColor='0 0 0.5'></material> 
-        </appearance> 
-        <torus innerRadius='0.5' outerRadius='1'></torus> 
-</shape> 
-    </transform>
-<transform translation='3 2 1'>
-<shape> 
-        <appearance> 
-        <material diffuseColor='0.1 0 0.1'></material> 
-        </appearance> 
-       <Cylinder  height="2" radius='0.1'></Cylinder>  
-    </shape> 
-    </transform>  
+  <transform rotation="1 -0.4 0.4 1.65" translation="0 -1.5 0"> 
+  <Shape>
+ <Appearance>
+ <material diffuseColor="0.95 0.95 0.95" ></material>
+ </Appearance>
+ <torus innerRadius="1.1" outerRadius="1.1"></torus>
+ </Shape>
+ </transform
 	/Scene>
  </body> 
 </html>
